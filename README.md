@@ -115,4 +115,4 @@ EduTrack adalah aplikasi manajemen data sekolah berbasis web yang dibangun denga
 - **Pengumuman:** Buat dan kelola pengumuman.
 - **Manajemen User & Role:** Admin dapat mengelola user dan hak akses.
 - **Export Data:** Export nilai ke Excel/PDF.
-- **Autentikasi & Hak Akses:** Login, register, dan pembatasan akses berdasarkan role.
+- **Autentikasi & Hak Akses:** Login, dan pembatasan akses berdasarkan role.
