@@ -1,5 +1,34 @@
 # Relasi Database EduTrack
 
+```mermaid
+erDiagram
+    USERS ||--o{ SISWAS : "user_id"
+    USERS ||--o{ GURUS : "user_id"
+    SISWAS ||--o{ NILAI : "siswa_id"
+    MATA_PELAJARANS ||--o{ NILAI : "mata_pelajaran_id"
+    SISWAS ||--o{ EKSTRAKURIKULER_SISWA : "siswa_id"
+    EKSTRAKURIKULERS ||--o{ EKSTRAKURIKULER_SISWA : "ekstrakurikuler_id"
+    JADWAL_PELAJARANS }o--|| GURUS : "guru_id"
+    JADWAL_PELAJARANS }o--|| MATA_PELAJARANS : "mata_pelajaran_id"
+    NILAI }o--|| JADWAL_PELAJARANS : "mata_pelajaran_id"
+    GALERIS }o--|| USERS : "user_id"
+    PENGUMUMEN }o--|| USERS : "user_id"
+    MENU_PERMISSIONS ||--o{ USERS : "role"
+```
+
+**Penjelasan singkat:**
+- **users**: Menyimpan data user (admin, guru, siswa).
+- **siswas**: Data siswa, relasi ke users.
+- **gurus**: Data guru, relasi ke users.
+- **mata_pelajarans**: Data mata pelajaran.
+- **jadwal_pelajarans**: Jadwal, relasi ke guru dan mata pelajaran.
+- **nilais**: Data nilai, relasi ke siswa dan mata pelajaran.
+- **ekstrakurikulers**: Data ekstrakurikuler.
+- **ekstrakurikuler_siswa**: Pivot table siswa-ekstrakurikuler.
+- **galeris**: Galeri foto, relasi ke user.
+- **pengumumen**: Pengumuman, relasi ke user.
+- **menu_permissions**: Hak akses menu berdasarkan role.
+
 ## Relasi yang Sudah Ada
 
 ### 1. User ↔ Siswa (One-to-One)
