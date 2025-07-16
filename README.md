@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 # EduTrack
 
-EduTrack adalah aplikasi manajemen data sekolah berbasis web yang dibangun dengan Laravel. Aplikasi ini memudahkan pengelolaan data siswa, guru, nilai, jadwal pelajaran, ekstrakurikuler, galeri, pengumuman, dan manajemen user dengan sistem autentikasi dan hak akses berbasis role.
-=======
->>>>>>> c4ca258f143010c7e925190281436bb42d212c4c
+EduTrack adalah aplikasi manajemen data sekolah berbasis web...
 
 ## Fitur Utama
 
@@ -50,23 +47,5 @@ EduTrack adalah aplikasi manajemen data sekolah berbasis web yang dibangun denga
 
 ## Login Default
 
-<<<<<<< HEAD
 - **Admin:** Username/email & password default dapat dilihat di seeder `UserSeeder.php` atau database.
 - **Guru/Siswa:** Data login juga dapat dilihat di database setelah seeder dijalankan.
-=======
-- **Admin:**  Username/email & password default bisa dilihat di seeder `UserSeeder.php` atau database.
-- **Guru/Siswa:**  Data login juga bisa dilihat di database setelah seeder dijalankan.
-
-## Fitur Utama
-
-- **Manajemen Siswa:** Tambah, edit, hapus, dan lihat data siswa.
-- **Manajemen Guru:** Tambah, edit, hapus, dan lihat data guru.
-- **Manajemen Nilai:** Input, edit, hapus, dan lihat nilai siswa (role-based: admin/guru/siswa).
-- **Jadwal Pelajaran:** Atur jadwal pelajaran per kelas.
-- **Ekstrakurikuler:** Manajemen kegiatan ekstrakurikuler.
-- **Galeri:** Upload dan kelola foto galeri sekolah.
-- **Pengumuman:** Buat dan kelola pengumuman.
-- **Manajemen User & Role:** Admin dapat mengelola user dan hak akses.
-- **Export Data:** Export nilai ke Excel/PDF.
-- **Autentikasi & Hak Akses:** Login, dan pembatasan akses berdasarkan role.
->>>>>>> c4ca258f143010c7e925190281436bb42d212c4c
